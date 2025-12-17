@@ -15372,8 +15372,7 @@ iframe {
   min-height: 42px;
   right: 0;
   top: 0;
-  z-index: 100;
-  z-index: 1050; }
+  z-index: 210; }
   .map-result-btn {
     padding: 8px 24px;
     background: #E5F2FF;
