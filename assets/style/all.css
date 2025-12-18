@@ -10936,7 +10936,7 @@ ol {
   border-radius: 0 10px 10px 0; }
 
 .input-group > .input-group-text {
-  height: 36px;
+  height: 37px;
   border: 1px solid #3D8D7A;
   color: #3D8D7A;
   border-radius: 0 10px 10px 0; }
@@ -11134,14 +11134,14 @@ ol {
   margin: 24px 0; }
 
 [data-form-style="secondary"] .modal-form-group .form-control:not(:disabled) {
-  border: 1px solid #C66841; }
+  border: 1px solid #F29F3D; }
   [data-form-style="secondary"] .modal-form-group .form-control:not(:disabled) ~ .input-group-text {
-    border: 1px solid #C66841;
-    color: #C66841; }
+    border: 1px solid #F29F3D;
+    color: #F29F3D; }
 
 [data-form-style="secondary"] .modal-form-group .form-select {
   background: url("../images/ic-dropdown-secondary.svg") no-repeat right center #fff;
-  border: 1px solid #C66841; }
+  border: 1px solid #F29F3D; }
 
 [data-form-style="secondary"] .modal-form-group .modal-form-group .label {
   color: #525252 !important; }
@@ -11267,9 +11267,9 @@ iframe {
               filter: brightness(0.8); }
 
 .link-base-color {
-  color: #72889C; }
+  color: #525252; }
   .link-base-color:hover {
-    color: #455563; }
+    color: #1f1f1f; }
     .link-base-color:hover img {
       -webkit-filter: brightness(0.8);
               filter: brightness(0.8); }
@@ -11549,7 +11549,7 @@ iframe {
   color: #72B7F3 !important; }
 
 .base-color {
-  color: #72889C !important; }
+  color: #525252 !important; }
 
 .base-light-color {
   color: #9FB1C2 !important; }
@@ -11806,7 +11806,7 @@ iframe {
   background: #72B7F3 !important; }
 
 .bg-base-color {
-  background: #72889C !important; }
+  background: #525252 !important; }
 
 .bg-base-light-color {
   background: #9FB1C2 !important; }
@@ -12018,8 +12018,8 @@ iframe {
 
 .btn-dark-base-color {
   color: #fff !important;
-  background: #72889C !important;
-  border: 1px solid #72889C;
+  background: #525252 !important;
+  border: 1px solid #525252;
   padding: 4px 12px;
   border-radius: 4px;
   display: -webkit-box;
@@ -12033,7 +12033,7 @@ iframe {
           align-items: center; }
   .btn-dark-base-color:hover {
     color: #fff !important;
-    background: #657b90 !important; }
+    background: #454545 !important; }
 
 .btn-dark-base-light-color {
   color: #fff !important;
@@ -12757,9 +12757,9 @@ iframe {
               filter: brightness(0.95); }
 
 .btn-border-base-color {
-  color: #72889C !important;
+  color: #525252 !important;
   background: #fff !important;
-  border: 2px solid #72889C;
+  border: 2px solid #525252;
   padding: 4px 16px;
   border-radius: 4px;
   display: -webkit-box;
@@ -12772,8 +12772,8 @@ iframe {
       -ms-flex-align: center;
           align-items: center; }
   .btn-border-base-color:hover {
-    color: #657b90 !important;
-    border: 2px solid #657b90 !important; }
+    color: #454545 !important;
+    border: 2px solid #454545 !important; }
     .btn-border-base-color:hover img {
       -webkit-filter: brightness(0.95);
               filter: brightness(0.95); }
@@ -13587,7 +13587,7 @@ iframe {
   border-color: #72B7F3 !important; }
 
 .bd-base-color {
-  border-color: #72889C !important; }
+  border-color: #525252 !important; }
 
 .bd-base-light-color {
   border-color: #9FB1C2 !important; }
@@ -13897,7 +13897,7 @@ iframe {
 
 .table-bd-base-color th,
 .table-bd-base-color td {
-  border-color: #72889C; }
+  border-color: #525252; }
 
 .table-bd-base-light-color th,
 .table-bd-base-light-color td {
@@ -14166,7 +14166,8 @@ iframe {
   display: block;
   color: #d3d7e9; }
 
-.table-form .form-control, .table-form .form-select {
+.table-form .form-control,
+.table-form .form-select {
   font-size: 1rem; }
 
 .table-form td {
@@ -15052,7 +15053,9 @@ iframe {
   text-align: center; }
 
 .range-group .form-range {
-  background: none; }
+  background: none;
+  /* Firefox track */
+  /* Firefox progress */ }
   .range-group .form-range::-webkit-slider-thumb {
     background-color: #F29F3D;
     width: 8px;
@@ -15062,6 +15065,19 @@ iframe {
     position: relative; }
   .range-group .form-range::-webkit-slider-runnable-track {
     height: 4px; }
+  .range-group .form-range::-moz-range-thumb {
+    width: 8px;
+    height: 8px;
+    background: #F29F3D;
+    border-radius: 50%;
+    border: none; }
+  .range-group .form-range::-moz-range-track {
+    height: 4px;
+    background: #e0e0e0; }
+  .range-group .form-range::-moz-range-progress {
+    height: 4px;
+    background: #F29F3D;
+    border-radius: 50px; }
 
 /*-----------------文字樣式---------------------*/
 .small-txt {
@@ -15070,7 +15086,7 @@ iframe {
 
 .pattern-bg {
   background: url(../images/bg-left.png) no-repeat, url(../images/bg-right.png) no-repeat;
-  background-position: left top, right top;
+  background-position: left top, right top;
   background-size: 20%, 30%; }
 
 @media (max-width: 576px) {
@@ -15207,7 +15223,7 @@ iframe {
   .navbar .nav-link {
     padding: 12px 8px;
     min-width: 72px;
-    color: #3E9DD2;
+    color: #0070C0;
     font-size: 0.8rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -15356,7 +15372,7 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #5C719C;
+  color: #525252;
   padding: 12px 16px;
   font-size: 0.95rem;
   border-bottom: 1px solid #E5F2FF;
@@ -15713,7 +15729,7 @@ footer .footer-logo {
     background: #ECF4F8;
     font-size: 1.125rem;
     padding: 16px 16px 16px 24px;
-    color: #5C719C;
+    color: #0070C0;
     border-radius: 0 !important;
     position: relative; }
     @media (max-width: 1200px) {
@@ -15765,7 +15781,7 @@ footer .footer-logo {
         color: #5C719C; }
   .side-menu .accordion-sub {
     padding: 8px 16px 8px 30px;
-    color: #0070C0;
+    color: #525252;
     background: none !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
@@ -15784,7 +15800,8 @@ footer .footer-logo {
             -ms-transform: rotate(0deg);
                 transform: rotate(0deg); }
     .side-menu .accordion-sub ~ .accordion-collapse .form-select, .side-menu .accordion-sub ~ .accordion-collapse .form-control {
-      border: 1px solid #F29F3D; }
+      border: 1px solid #F29F3D;
+      background: url("../images/ic-dropdown-secondary.svg") no-repeat right center #fff; }
     .side-menu .accordion-sub ~ .accordion-collapse .btn {
       border-radius: 10px; }
   .side-menu .accordion-subsub {
