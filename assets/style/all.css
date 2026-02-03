@@ -15799,9 +15799,11 @@ footer .footer-logo {
         -webkit-transform: rotate(0deg);
             -ms-transform: rotate(0deg);
                 transform: rotate(0deg); }
-    .side-menu .accordion-sub ~ .accordion-collapse .form-select, .side-menu .accordion-sub ~ .accordion-collapse .form-control {
+    .side-menu .accordion-sub ~ .accordion-collapse .form-select {
       border: 1px solid #F29F3D;
       background: url("../images/ic-dropdown-secondary.svg") no-repeat right center #fff; }
+    .side-menu .accordion-sub ~ .accordion-collapse .form-control {
+      border: 1px solid #F29F3D; }
     .side-menu .accordion-sub ~ .accordion-collapse .btn {
       border-radius: 10px; }
   .side-menu .accordion-subsub {
